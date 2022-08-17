@@ -6,12 +6,12 @@
 23432 -> да */
 
 int a = new Random().Next(10000,100000);
+
 int a1 = a / 1000;
 int a2 = a % 100;
-
 int a3 = a2 % 10 * 10 + a2 / 10;
 
-if (a1 == a2)
+if (a1 == a3)
    Console.WriteLine($"{a} -> да");
 
 else
