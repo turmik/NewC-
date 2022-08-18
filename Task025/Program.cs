@@ -4,6 +4,7 @@
 2, 4 -> 16
 Реализовать функцию возведения в степень самостоятельно!*/
 
+/*Как прописать цикл?*/
 
 Console.Write("Введите число A: ");
 int A = int.Parse(Console.ReadLine());
@@ -15,7 +16,7 @@ int GetMult(int res)
 { 
     int c = 1;
 
-  for(int i = 1; i <= B; 1++)
+  for(int i = 1; i <= B; i++)
    {
     
    }
