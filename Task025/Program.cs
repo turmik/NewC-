@@ -8,22 +8,22 @@
 
 Console.Write("Введите число A: ");
 int A = int.Parse(Console.ReadLine());
-Console.Write("Введите число B: 0");
+Console.Write("Введите число B: ");
 int B = int.Parse(Console.ReadLine());
 
-int GetMult(int res)
+int GetMult(int N)
 
 { 
-    int c = 1;
+    int res = 1;
 
   for(int i = 1; i <= B; i++)
    {
-    
+     res = res*A ;
    }
-   return c;
+   return res;
 }
 
-Console.Write(GetMult(A));
+Console.WriteLine(GetMult(A));
 
 
 
