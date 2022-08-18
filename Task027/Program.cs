@@ -4,24 +4,22 @@
 82 -> 10
 9012 -> 12*/
 
-Console.WriteLine("Введите число: ");
-int num = int.Parse(Console.ReadLine());
+Console.Write("Введите число: ");
+int price = int.Parse(Console.ReadLine());
 
 int NumSum(int N)
 {
-   int b = num%10;
    int result = 0;
-   while(b>0)
+   while(price>0)
    {
-    
-    num = num/10;
-    result = result + b;
+    result = result + (price%10);
+    price = price/10;
     
    }
    return result;
     
 }
-Console.WriteLine(NumSum(num));
+Console.WriteLine(NumSum(price));
 
 
 /*int a = 4;
