@@ -4,7 +4,7 @@
 82 -> 10
 9012 -> 12*/
 
-/*Console.WriteLine("Введите число: ");
+Console.WriteLine("Введите число: ");
 int num = int.Parse(Console.ReadLine());
 
 int NumSum(int N)
@@ -13,17 +13,19 @@ int NumSum(int N)
    int result = 0;
    while(b>0)
    {
+    
     num = num/10;
     result = result + b;
+    
    }
    return result;
     
 }
-Console.WriteLine(NumSum(num));*/ 
+Console.WriteLine(NumSum(num));
 
 
-int a = 4;
+/*int a = 4;
 int b = a/10; 
-Console.WriteLine($"{b}");
+Console.WriteLine($"{b}");*/
 
 
