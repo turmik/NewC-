@@ -10,13 +10,13 @@ int a = int.Parse(Console.ReadLine());
 Console.Write("Введите число b: ");
 int b = int.Parse(Console.ReadLine());
 
-int[] myArray(int size, int a, int b) /*new Random().Next(length, 100, 999)*/
+int[] myArray(int size, int a, int b) 
 {
     int[] res = new int[size];
 
     for (int i = 0; i < size; i++)
     {
-        res[i] = new Random().Next(100, 1000);
+        res[i] = new Random().Next(a, b+1);
     }
     return res;
 }
@@ -36,9 +36,7 @@ int[] evenMike(int[] mike)
 
 int[] arrCost = myArray(size, a, b);
 Console.WriteLine($"[{String.Join(",", arrCost)}]");
-Console.Write(evenMike(arrCost));
+Console.Write(evenMike(arrCost)); 
 
 
-/*int[] myArray = GetArray(10, 100, 1000);
-Console.WriteLine($"{GetArray(myArray)}");
-Console.WriteLine($"{result}");*/
+
