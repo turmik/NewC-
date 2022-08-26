@@ -4,24 +4,32 @@
 [-4, -6, 89, 6] -> 0*/
 Console.Write("Введите size: ");
 int size = int.Parse(Console.ReadLine());
-Console.Write("Введите minValue: ");
-int minValue = int.Parse(Console.ReadLine());
-Console.Write("Введите maxValue: ");
-int maxValue = int.Parse(Console.ReadLine());
+Console.Write("Введите число a: ");
+int a = int.Parse(Console.ReadLine());
+Console.Write("Введите число b: ");
+int b = int.Parse(Console.ReadLine());
 
-int[] GetArray(int size, int minValue, int maxValue) /*new Random().Next(length, 100, 999)*/
+int[] myArray(int size, int a, int b) 
 {
     int[] res = new int[size];
-    int sum = 0;
     
-    for(int i=1; i < size; i+=2);
+    for(int i=1; i < size; i++);
     {
-       res[i] = new Random().Next(minValue,maxValue+1);
-       sum += res[i];
+       res[i] = new Random().Next(a, b+1);
     }
-    return sum;
+    return res;
 }
 
-int[] OddArr = GetArray(size, minValue, maxValue);
-Console.WriteLine(String.Join(" , ", OddArr));
-Console.WriteLine($"{sum}");
+int OddMike(int[] man)
+{
+    int oddRes = 0;
+    for (int i = 1; i < man.Length; i += 2)
+    {
+        oddRes += man[i];
+    }
+    return oddRes;
+}
+
+int[] array = myArray(size, a, b);
+Console.WriteLine($"[{String.Join(",", array)}]");
+Console.Write(OddMike(array));
