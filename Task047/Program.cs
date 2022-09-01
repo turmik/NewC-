@@ -10,17 +10,17 @@ int m = int.Parse(Console.ReadLine());
 Console.Write("n= ");
 int n = int.Parse(Console.ReadLine());
 Console.Write("minValue= ");
-double minValue = double.Parse(Console.ReadLine());
+int minValue = int.Parse(Console.ReadLine());
 Console.Write("maxValue= ");
-double maxValue = double.Parse(Console.ReadLine());
+int maxValue = int.Parse(Console.ReadLine());
 
 
-double[,] GetArray(int m, int n, double minValue, double maxValue)
+double[,] GetArray(int m, int n, int minValue, int maxValue)
 {
     double[,] result = new double[m, n];
     for (int i = 0; i < m; i++)
         for (int j = 0; j < n; j++)
-            result[i, j] = new Random().Next();
+            result[i, j] = new Random().Next(minValue, maxValue+1)/10.0;
 
     return result;
 }
