@@ -31,14 +31,23 @@ void PrintArray(int[,] arr)
 
 void ElementPosition(int[,] arr, int m, int n)
 {
-    try
+    /* try
+     {
+         Console.WriteLine($"{arr[m, n]}");
+     }
+     catch
+     {
+         Console.WriteLine("Такого элемента в массиве нет");
+     }*/
+    if (m > arr.GetLength(0) || n > arr.GetLength(1))
+    {
+        Console.WriteLine($"Такого элемента в массиве нет");
+    }
+    else
     {
         Console.WriteLine($"{arr[m, n]}");
     }
-    catch
-    {
-        Console.WriteLine("Такого элемента в массиве нет");
-    }
+
 }
 
 Console.Write("Число строк row= ");
@@ -57,4 +66,4 @@ int n = int.Parse(Console.ReadLine());
 int[,] myArray = GetArray(row, col, beginNum, endNum);
 PrintArray(myArray);
 Console.WriteLine();
-ElementPosition(myArray);
+ElementPosition(myArray, m, n);
