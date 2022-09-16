@@ -34,12 +34,6 @@ void PrintArray(int[,] array)
     }
 }
 
-//for run in range(n - 1):
-//    for i in range(len(lst)):
-//        for j in range(len(lst[i]) - 1):
-//            if lst[i][j] > lst[i][j + 1]:
-//                lst[i][j], lst[i][j + 1] = lst[i][j + 1], lst[i][j]
-//
 int[,] DescendRowElements(int[,]arr)
 {
     for (int run = 0; run < arr.GetLength(1) - 1; run++)
